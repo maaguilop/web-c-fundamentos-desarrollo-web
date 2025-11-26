@@ -1,0 +1,19 @@
+/*Selector general*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #232323;
+    color: #fff;
+}
+.btn{
+    background-color: aquamarine;
+    padding: 15px;
+}
+#social-icons{
+    background-color: rgba(255, 68, 0, 0.452);
+}
+#social -icons .btn{
+    border-radius: 18px;
+}
