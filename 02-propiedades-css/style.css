@@ -32,11 +32,11 @@ h1, h2, h3, h4, h5, h6, p, a{
   display: inline-block;
   /* width: 172px; 
   height: 38px; */
-  background-color: blueviolet;
+  background-color: rgb(102, 34, 165);
   padding: 10px 50px; 
   /* padding-right: 50%; */
   margin: 30px auto 0px auto;
   text-align: center;
-  border: 6px solid white;
+  border: 6px solid rgb(25, 160, 70);
   border-radius: 10px;
 }
