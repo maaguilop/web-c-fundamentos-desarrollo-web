@@ -42,7 +42,7 @@ h2{
             right: 100px;
             width: 80px;
             height: 80px;
-            background: #FFD700;
+            background: #d55d17;
             border-radius: 50%;
             box-shadow: 0 0 40px #FFA500;
         }
@@ -59,8 +59,8 @@ h2{
             height: 40px;
         }
         .nube2 {
-            top: 120px;
-            right: 20%;
+            top: 52px;
+            right: 36%;
             width: 120px;
             height: 45px;
         }
