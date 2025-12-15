@@ -50,13 +50,14 @@ img{display: flex;}
   flex-direction: column;
   justify-content: center;
   padding: 0 30px;
-  gap: 15px;
+  gap: 5px;
 }
 .card-content h2{
-  font-size: 1.3rem;
+  font-size: 3rem;
 }
 .card-content p{
   font-size: 0.8rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .card-user-info{
   display: flex;
@@ -64,5 +65,5 @@ img{display: flex;}
   gap: 10px;
 }
 .card-user-info img{
-  border-radius: 10%;
+  border-radius: 60%;
 }
