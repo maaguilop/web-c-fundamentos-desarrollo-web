@@ -64,5 +64,5 @@ img{display: flex;}
   gap: 10px;
 }
 .card-user-info img{
-  border-radius: 50%;
+  border-radius: 10%;
 }
