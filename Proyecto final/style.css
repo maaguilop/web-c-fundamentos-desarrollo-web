@@ -1,6 +1,63 @@
+header{
+    width: 100%;
+  
+}
 .menu{
     display:flex;
-    justify-content: space-between;
-    width: 1200px;
-    height: 10px;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu .Logo{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+
+}
+
+
+.menu .botonescentro{
+    position: absolute;
+    left: 50%;
+    display: flex;
+    gap: 1px;
+    transform: translateX(-50%);
+
+}
+.menu .botonesright{
+    position:absolute;
+    left: 100%;
+    display: flex;
+    gap: 4px;
+    transform: translateX(-135%);
+    border-color: rgb(242,242,242);
+}
+.menu .botonesright button{
+    padding: 0.1px;
+    border-radius: 4px;
+    display: flex; 
+    align-items: center;
+    color: #171a20;
+}
+.menu button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .01px;
+    color: rgb(23,26,32);
+    padding: 8px 16px;
+    border-radius: 4px;
+
+}
+.menu button:hover{
+    background-color: rgb(242,242,242);
 }
