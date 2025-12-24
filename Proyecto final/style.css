@@ -1,0 +1,6 @@
+.menu{
+    display:flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 10px;
+}
