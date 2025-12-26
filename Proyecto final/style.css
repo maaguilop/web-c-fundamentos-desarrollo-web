@@ -350,3 +350,91 @@ body{
     object-fit: cover;
     object-position: center;
 }
+
+
+
+/* EL CONTENEDOR BLANCO PEGADO AL SUELO */
+.barra-inferior {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;            /* Altura fija exacta */
+    background-color: white;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    gap: 15px;               /* Espacio entre la barra gris y el botón */
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.08); /* Sombra sutil arriba */
+    z-index: 1000;
+    box-sizing: border-box;  /* Para que el padding no rompa las medidas */
+}
+
+/* 1. LA BARRA GRIS (Chat) */
+.chat-input-falso {
+    width: 450px;            /* <--- MEDIDA CLAVE: Bien ancho */
+    height: 40px;            /* Altura estándar de Tesla */
+    background-color: #f4f4f4; /* El gris clarito exacto */
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between; /* Texto a la izq, flecha a la der */
+    align-items: center;
+    padding: 0 10px;         /* Relleno interno */
+    cursor: text;            /* Cursor de "escribir" al pasar el mouse */
+    border: 1px solid transparent; /* Truco para evitar saltos si añades borde luego */
+}
+
+.chat-contenido-izq {
+    display: flex;
+    align-items: center;
+    gap: 10px;               /* Espacio entre el icono y el texto */
+    color: #5c5e62;          /* Color gris oscuro del texto */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.icono-mensaje {
+    color: #5c5e62;
+    font-size: 16px;
+}
+
+/* El cuadrito de la flecha a la derecha */
+.icono-flecha-box {
+    background-color: #e2e2e2; /* Un gris un pelín más oscuro */
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;              /* Flecha blanca */
+    font-size: 14px;
+}
+
+/* 2. EL BOTÓN BLANCO (Schedule) */
+.btn-schedule {
+    height: 40px;            /* Misma altura que la barra de chat */
+    padding: 0 25px;         /* Ancho del botón */
+    background-color: white;
+    border: 1px solid #d0d1d2; /* Borde gris fino */
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #171a20;          /* Texto casi negro */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.icono-volante {
+    color: #3e6ae1;          /* EL AZUL DE TESLA */
+    font-size: 18px;
+}
+
+.btn-schedule:hover {
+    background-color: #f4f4f4; /* Efecto suave al pasar el mouse */
+}
