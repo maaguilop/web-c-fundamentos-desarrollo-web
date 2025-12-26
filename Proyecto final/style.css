@@ -1,6 +1,10 @@
 header{
+   position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-  
+    z-index: 1000;
+    background-color: white;
 }
 .menu{
     display:flex;
@@ -78,6 +82,7 @@ body{
     height: 70vh;
     overflow: hidden;
     color: white;
+    padding-top: 55px;
 }
 .modelos .modelY{
     width: 100%;
@@ -87,6 +92,7 @@ body{
     top: 0;
     left: 0;
     z-index: 1;
+    padding-top: 35px;
 }
 .contenido-Model-Y{
     position: absolute;
@@ -96,9 +102,10 @@ body{
     transform: translateX(-50%); 
     text-align: center;
     width: 100%;
+    padding-top: 55px;
 }
 .modelos h1{
-    font-size: 60px; /* Tamaño grande */
+    font-size: 60px;
     font-weight: 600;
     margin: 0;
     color: white;
@@ -133,3 +140,142 @@ body{
 }
 .btn-ordenar{background-color: #3e6ae1; color: white;}
 .btn-inventario{color: #393c41; background-color: white;}
+
+/* Contenedor que agrupa las dos tarjetas */
+.slider-falso {
+    display: flex;       /* Pone los elementos lado a lado */
+    width: 100%;
+    height: 95vh;        /* Altura del slider (ajustable) */
+    gap: 15px;           /* El espacio blanco entre el Model Y y el Model 3 */
+    box-sizing: border-box;
+    position: relative;  /* Referencia para la flecha */
+    padding-left: 50px;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Estilo común para ambas tarjetas */
+.tarjeta {
+    position: relative;  /* Para poder poner texto encima */
+    height: 100%;
+    border-radius: 10px;  /* Bordes ligeramente redondeados (estilo Tesla) */
+    overflow: hidden;
+    color: white;
+}
+
+/* LA TARJETA DEL MODEL Y (Ocupa el 85% del ancho) */
+.principal {
+    flex: 0 0 80%;       /* Fuerza a que ocupe el 85% siempre */
+}
+
+/* LA TARJETA DEL MODEL 3 (Ocupa el resto) */
+.secundaria {
+    flex: 1;             /* Ocupa el espacio sobrante */
+    opacity: 0.9;        /* Opcional: un poco más oscura para dar profundidad */
+}
+.secundaria .img-fondo{
+    object-position: left center;
+}
+
+/* La imagen de fondo */
+.img-fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* Clave: llena la tarjeta sin deformarse */
+}
+
+.tag-arriba {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.info-abajo {
+    position: absolute;
+    bottom: 40px;        
+    left: 20px;         
+    width: 100%;
+}
+
+.info-abajo h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.subrayado {
+    font-size: 18px;
+    margin-top: 5px;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.botones-accion {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+.secundaria .botones-accion {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 68%;
+    align-items: stretch;
+    padding-right: 10px;
+}
+
+.botones-accion button {
+    padding: 10px 40px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.btn-azul {background-color: #3e6ae1; color: white;}
+.btn-blanco { background-color: white; color: #171a20; }
+.flecha-deco {
+    position: absolute;
+    right: 12%;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: default;
+    z-index: 10;
+}
+
+.puntos-slider {
+    display: flex;
+    justify-content: center; /* Centrados al medio de la pantalla */
+    gap: 8px;               /* Espacio entre cada puntito */
+    margin-top: 20px;        /* Separación de las tarjetas de arriba */
+    margin-bottom: 15px;     /* Separación de la barra de abajo */
+    width: 100%;
+}
+.punto {
+    width: 12px;              /* Ancho del círculo */
+    height: 12px;             /* Alto del círculo */
+    background-color: #8b8c8f; /* Gris clarito (inactivo) */
+    border-radius: 50%;      /* La magia que los hace redondos */
+}
+.punto.activo {
+    background-color: #171a20; /* El color oscuro de Tesla */
+     /* Un poquitito más grande para resaltar */
+}
