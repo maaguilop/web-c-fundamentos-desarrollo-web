@@ -25,7 +25,6 @@ header{
     
 }
 
-
 .menu .botonescentro{
     position: absolute;
     left: 50%;
@@ -141,49 +140,40 @@ body{
 .btn-ordenar{background-color: #3e6ae1; color: white;}
 .btn-inventario{color: #393c41; background-color: white;}
 
-/* Contenedor que agrupa las dos tarjetas */
 .slider-falso {
-    display: flex;       /* Pone los elementos lado a lado */
+    display: flex;
     width: 100%;
-    height: 95vh;        /* Altura del slider (ajustable) */
-    gap: 15px;           /* El espacio blanco entre el Model Y y el Model 3 */
+    height: 95vh;
+    gap: 15px;
     box-sizing: border-box;
-    position: relative;  /* Referencia para la flecha */
+    position: relative;  
     padding-left: 50px;
     padding-top: 50px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
-
-/* Estilo común para ambas tarjetas */
 .tarjeta {
-    position: relative;  /* Para poder poner texto encima */
+    position: relative;
     height: 100%;
-    border-radius: 10px;  /* Bordes ligeramente redondeados (estilo Tesla) */
+    border-radius: 10px;
     overflow: hidden;
     color: white;
 }
-
-/* LA TARJETA DEL MODEL Y (Ocupa el 85% del ancho) */
 .principal {
-    flex: 0 0 80%;       /* Fuerza a que ocupe el 85% siempre */
+    flex: 0 0 80%;
 }
-
-/* LA TARJETA DEL MODEL 3 (Ocupa el resto) */
 .secundaria {
-    flex: 1;             /* Ocupa el espacio sobrante */
-    opacity: 0.9;        /* Opcional: un poco más oscura para dar profundidad */
+    flex: 1;
+    opacity: 0.9;
 }
 .secundaria .img-fondo{
     object-position: left center;
 }
-
-/* La imagen de fondo */
 .img-fondo {
     width: 100%;
     height: 100%;
-    object-fit: cover;   /* Clave: llena la tarjeta sin deformarse */
+    object-fit: cover;
 }
 
 .tag-arriba {
@@ -263,19 +253,100 @@ body{
 
 .puntos-slider {
     display: flex;
-    justify-content: center; /* Centrados al medio de la pantalla */
-    gap: 8px;               /* Espacio entre cada puntito */
-    margin-top: 20px;        /* Separación de las tarjetas de arriba */
-    margin-bottom: 15px;     /* Separación de la barra de abajo */
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+    margin-bottom: 15px;
     width: 100%;
 }
 .punto {
-    width: 12px;              /* Ancho del círculo */
-    height: 12px;             /* Alto del círculo */
-    background-color: #8b8c8f; /* Gris clarito (inactivo) */
-    border-radius: 50%;      /* La magia que los hace redondos */
+    width: 12px;
+    height: 12px;
+    background-color: #8b8c8f;
+    border-radius: 50%;
 }
 .punto.activo {
-    background-color: #171a20; /* El color oscuro de Tesla */
-     /* Un poquitito más grande para resaltar */
+    background-color: #171a20;
+}
+
+.ofertas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 0 45px;
+    padding-left: 50px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.tarjeta-promo {
+    background-color: rgb(244,244,244);
+    border-radius: 8px;
+    display: flex;
+    height: 225px;
+    overflow: hidden;
+}
+
+
+.contenido-promo {
+    flex: 1;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contenido-promo h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    margin: 0 0 10px 0;
+    color: #171a20;
+}
+
+.contenido-promo p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    color: rgb(103,105,109);
+    margin: 0 0 20px 0;
+    line-height: 1.4;
+    color: #7f8184;
+}
+
+
+.btn-promo {
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 4px;
+    padding: 8px 85px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    color: #46494e;
+}
+
+.btn-promo:hover {
+    background-color:rgb(223,223,223);
+    border-color: rgb(223, 223, 223);
+}
+
+.imagen-promo {
+    width: 34%;
+    height: 100%;
+    position: relative;
+}
+
+.imagen-promo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
