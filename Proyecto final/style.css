@@ -232,7 +232,7 @@ body{
 }
 
 .btn-azul {background-color: #3e6ae1; color: white;}
-.btn-blanco { background-color: white; color: #171a20; }
+.btn-blanco { background-color: white; color: #46494e; }
 .flecha-deco {
     position: absolute;
     right: 12%;
@@ -352,43 +352,108 @@ body{
 }
 
 
+.caracteristicas {
+    display: grid;
+    grid-template-columns: 1.6fr 0.75fr; 
+    gap: 25px;
+    padding: 0 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 40px;
+    height: 575px;
+    box-sizing: border-box;
+}
 
-/* EL CONTENEDOR BLANCO PEGADO AL SUELO */
+.tarjeta {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+
+.media-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.contenido-media {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 2;
+    width: 90%;
+}
+
+.contenido-media h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 34px;
+    font-weight: 650;
+    margin: 0 0 20px 0;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+
+.botones-media {
+    display: flex;
+    gap: 8px;
+}
+
+.botones-media button {
+    padding: 12px 45px;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12.5px;
+    letter-spacing: -.2px;
+    cursor: pointer;
+}
+
+
+
 .barra-inferior {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 70px;            /* Altura fija exacta */
+    height: 70px;
     background-color: white;
     display: flex;
-    justify-content: center; /* Centrado horizontal */
-    align-items: center;     /* Centrado vertical */
-    gap: 15px;               /* Espacio entre la barra gris y el botón */
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.08); /* Sombra sutil arriba */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
     z-index: 1000;
-    box-sizing: border-box;  /* Para que el padding no rompa las medidas */
+    box-sizing: border-box;
 }
 
-/* 1. LA BARRA GRIS (Chat) */
+
 .chat-input-falso {
-    width: 450px;            /* <--- MEDIDA CLAVE: Bien ancho */
-    height: 40px;            /* Altura estándar de Tesla */
-    background-color: #f4f4f4; /* El gris clarito exacto */
+    width: 450px;
+    height: 40px;
+    background-color: #f4f4f4;
     border-radius: 4px;
     display: flex;
-    justify-content: space-between; /* Texto a la izq, flecha a la der */
+    justify-content: space-between;
     align-items: center;
-    padding: 0 10px;         /* Relleno interno */
-    cursor: text;            /* Cursor de "escribir" al pasar el mouse */
-    border: 1px solid transparent; /* Truco para evitar saltos si añades borde luego */
+    padding: 0 10px;
+    cursor: text;
+    border: 1px solid transparent;
 }
 
 .chat-contenido-izq {
     display: flex;
     align-items: center;
-    gap: 10px;               /* Espacio entre el icono y el texto */
-    color: #5c5e62;          /* Color gris oscuro del texto */
+    gap: 10px;
+    color: #5c5e62;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 600;
@@ -399,25 +464,25 @@ body{
     font-size: 16px;
 }
 
-/* El cuadrito de la flecha a la derecha */
+
 .icono-flecha-box {
-    background-color: #e2e2e2; /* Un gris un pelín más oscuro */
+    background-color: #e2e2e2;
     width: 24px;
     height: 24px;
     border-radius: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;              /* Flecha blanca */
+    color: white;
     font-size: 14px;
 }
 
-/* 2. EL BOTÓN BLANCO (Schedule) */
+
 .btn-schedule {
-    height: 40px;            /* Misma altura que la barra de chat */
-    padding: 0 25px;         /* Ancho del botón */
+    height: 40px;
+    padding: 0 25px;
     background-color: white;
-    border: 1px solid #d0d1d2; /* Borde gris fino */
+    border: 1px solid #d0d1d2;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -425,16 +490,16 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 600;
-    color: #171a20;          /* Texto casi negro */
+    color: #171a20;
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
 .icono-volante {
-    color: #3e6ae1;          /* EL AZUL DE TESLA */
+    color: #3e6ae1;
     font-size: 18px;
 }
 
 .btn-schedule:hover {
-    background-color: #f4f4f4; /* Efecto suave al pasar el mouse */
+    background-color: #f4f4f4;
 }
