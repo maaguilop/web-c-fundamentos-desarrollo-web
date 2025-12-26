@@ -417,6 +417,38 @@ body{
     cursor: pointer;
 }
 
+footer {
+    width: 100%;
+    padding: 60px 0 90px 0; 
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.lista-footer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.lista-footer li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .4px;
+    color: #646669;
+    cursor: pointer;
+}
+
+.lista-footer li a {
+    text-decoration: none;
+    color: #646669;
+    transition: color 0.2s;
+    cursor: pointer;
+}
 
 
 .barra-inferior {
