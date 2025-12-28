@@ -25,6 +25,14 @@ header{
     
 }
 
+.menu .Logo2{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    display: none;
+}
+
 .menu .botonescentro{
     position: absolute;
     left: 50%;
@@ -49,6 +57,17 @@ header{
     display: flex; 
     align-items: center;
     color: #171a20;
+}
+.menu .btn-menu{
+    position:absolute;
+    left: 100%;
+    display: none;
+    gap: 4px;
+    transform: translateX(-135%);
+    border-color: rgb(242,242,242);
+    background-color: rgb(0 0 0 / .07);
+    border-radius: 4px;
+    top: 20%;
 }
 .menu button{
     background-color: transparent;
@@ -92,6 +111,17 @@ body{
     left: 0;
     z-index: 1;
     padding-top: 35px;
+}
+.modelos .modelYM{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-top: 35px;
+    display: none;
 }
 .contenido-Model-Y{
     position: absolute;
@@ -535,3 +565,80 @@ footer {
 .btn-schedule:hover {
     background-color: #f4f4f4;
 }
+
+@media screen and (max-width:1000px){
+    .menu .botonescentro{
+        display: none;
+    }
+    .menu .botonesright{
+        display: none;
+    }
+    .menu .btn-menu{
+        display: flex;
+    }
+    .caracteristicas{
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 20px;
+    }
+    .caracteristicas .tarjeta{
+        height: 550px;
+        width: 100%;
+    }
+    .imagen-promo{
+        display: none;
+    }
+    
+    .chat-input-falso{
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    .icono-flecha-box{
+        display: none;
+    }
+}
+
+@media screen and (max-width:780px){
+    header{
+        background-color: transparent;
+    }
+    .menu{
+        background-color: transparent;
+        padding: 0 0;
+    }
+    .menu .Logo{
+        display: none;
+    }
+    .menu .Logo2{
+        display: flex;
+    }
+    .menu .botonescentro{
+        display: none;
+    }
+    .menu .botonesright{
+        display: none;
+    }
+    .menu .btn-menu{
+        display: flex;
+    }
+    .menu .btn-menu button{
+        color: white;
+    }
+
+    .modelos .modelY{
+        padding-top: 0;
+    }
+    .caracteristicas{
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 20px;
+    }
+    .ofertas-container{
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 20px;
+    }
+}
+
+
