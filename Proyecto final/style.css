@@ -740,7 +740,7 @@ footer {
 
     }
     .secundaria .botones-accion button {
-        padding: 12px 20px;
+        padding: 20px 30px;
         border-radius: 4px;
 
     }
@@ -752,7 +752,22 @@ footer {
     }
     .secundaria .info-abajoM{
         display: block;
-
+        bottom: 15px;        
+        left: 10px;         
+        width: 100%;
+    }
+    .ofertas-container{
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    .tarjeta-promo{
+        flex-direction: column-reverse;
+        height: 85%;
+    }
+    .imagen-promo{
+            display: block;
+            width: 100%;
+            height: 250px;
     }
     .contenido-promo h2{
         font-size: 28px;
@@ -782,6 +797,18 @@ footer {
         grid-template-columns: 1fr;
         height: auto;
         gap: 20px;
+    }
+
+    .lista-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    footer {
+        padding-bottom: 120px; 
+    }
+    .texto-placeholder{
+        display: none;
     }
 
 }
